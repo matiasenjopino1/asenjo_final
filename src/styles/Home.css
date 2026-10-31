@@ -1,0 +1,81 @@
+.home-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f8fafc;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.home-container h1 {
+  font-size: 36px;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.home-subtitle {
+  color: #64748b;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.home-card {
+  width: 280px;
+  min-height: 220px;
+  padding: 25px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
+}
+
+.home-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.16);
+}
+
+.login-card {
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+}
+
+.register-card {
+  background: linear-gradient(135deg, #0891b2, #0d9488);
+}
+
+.card-icon {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.home-card h2 {
+  font-size: 26px;
+  margin: 5px 0;
+}
+
+.home-card p {
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+@media (max-width: 650px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
